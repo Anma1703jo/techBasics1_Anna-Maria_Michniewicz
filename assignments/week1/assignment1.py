@@ -1,3 +1,4 @@
+#Greetings
 print("Oh hello, dear fella. You've been visited by Doggy Long Neck.")
 
 #cutie patootie doggy face (it's rough, I know)
