@@ -1,2 +1,2 @@
 # techBasics1_Anna-Maria_Michniewicz
-----please call me Anma-----
+![alt text](https://github.com/Anma1703jo/techBasics1_Anna-Maria_Michniewicz/blob/main/Banner.pdf.pdf)
