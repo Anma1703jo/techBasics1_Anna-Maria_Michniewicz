@@ -1,3 +1,5 @@
+#space game
+
 import time
 
 current_situation = "start"
