@@ -1,4 +1,4 @@
-# Hi, I thought we were supposed to write something about the code, but I wasn't sure where. But here we are, hope that's fine! 
+c# Hi, I thought we were supposed to write something about the code, but I wasn't sure where. But here we are, hope that's fine!
 #So for the ASCII Art I was inspired by the Lesser Dog from Undertale and thought that I could do some cool stuff with python by wiggling the neck or something. DataX didn't
 #teach me much (or I didn't learn much) so I searched for some cool tips and found this: https://dev.to/reardon85/using-ascii-art-in-python-1ea1 
 #I kind of got the hang of the string, but it was mostly guessing
