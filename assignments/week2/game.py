@@ -1,4 +1,4 @@
-#space game
+#space_game.py
 
 import time
 
