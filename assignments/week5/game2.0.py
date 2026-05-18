@@ -1,7 +1,7 @@
 import time
 
 #variables
-#current_situation = "start"
+current_situation = "start"
 
 #in order to simplify the functions (rooms), I thought I'll just separate the whole text/dialogue from it
 #and do those lists. Kind of hard to find what you need while coding tho
@@ -296,7 +296,6 @@ def finale():
     robo_speak(finale_text[-1], "cyan")
     return "end"
 
-current_situation = "finale"
 
 #and now the whole while loop to control all this code
 while current_situation != "end":
