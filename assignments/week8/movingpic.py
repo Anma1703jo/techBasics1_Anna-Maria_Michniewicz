@@ -3,6 +3,11 @@ import random
 
 #start pygame
 pygame.init()
+pygame.mixer.init() #start the music player
+
+#load some super cool music
+pygame.mixer.music.load("GhostFight.mp3")
+pygame.mixer.music.play(-1) # play, -1 for looping indefinitely
 
 #Variables
 SCREEN_WIDTH = 800
@@ -15,11 +20,12 @@ SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 #caption of the window
 pygame.display.set_caption("Sans")
 
+
 class BoundingImage:
     def __init__(self, x, y, img, rd=False):
         self.img = pygame.image.load(img)
         self.img =pygame.transform.scale(self.img, (200,200))
-        self.sans_rect = self.img.get_rect()
+        self.sans_rect = self.img.get_rect() #since imgs are a surface we need to put a rectangle on it to be able to move it?? If I understood right?
         self.x = x
         self.y = y
         self.direction = 1 + random.choice([-1, 1])
@@ -28,14 +34,17 @@ class BoundingImage:
         self.gravity = 0.5
         self.floor = 200
 
+    #wanted to add even more rando movement for the second instance
         self.rd = rd
 
         self.timer = 0
         self.change_interval = 60
 
+    #tint the doggo, since it is black when uploaded on its own
     def tint(self):
         self.img.fill(color=(255,255,255), special_flags=pygame.BLEND_ADD)
 
+    #all the random
     def random_move(self):
         self.timer += 1
         if self.timer > self.change_interval:
@@ -46,7 +55,7 @@ class BoundingImage:
 
 
     def move(self):
-
+    #for the doggo
         if self.rd:
             self.random_move()
 
@@ -84,7 +93,6 @@ while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
-
 
     SCREEN.fill(BACKGROUND_COLOR)
 
